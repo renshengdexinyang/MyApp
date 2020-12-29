@@ -1,0 +1,9 @@
+include ':framework:framework-http'
+include ':framework:framework-base-widget'
+include ':framework:framework-util'
+
+include ':gphone-mode:mode-hq'
+include ':gphone-mode:mode-wo'
+include ':gphone-mode:mode-homepage'
+
+include ':gphone-mmi:gphone-yuelaiyuehao'
