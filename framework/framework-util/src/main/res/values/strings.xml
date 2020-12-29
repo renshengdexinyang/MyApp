@@ -1,0 +1,3 @@
+<resources>
+    <bool name="app_isDebug">true</bool>
+</resources>

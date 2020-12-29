@@ -2,8 +2,6 @@ package com.example.test;
 
 import android.app.Application;
 
-import java.util.logging.Logger;
-
 /**
  * date :           2020/12/11 16:55
  * author :         鹏

@@ -15,16 +15,17 @@ ext {
     ]
 
     dependencie = [
-            appcompat   : 'androidx.appcompat:appcompat:1.2.0',
-            material    : 'com.google.android.material:material:1.2.1',
-            junit       : 'junit:junit:4.+',
-            junit1      : 'androidx.test.ext:junit:1.1.2',
-            espressocore: 'androidx.test.espresso:espresso-core:3.3.0',
-            okhttp      : 'com.squareup.okhttp3:okhttp:4.9.0',
-            rxjava      : 'org.rxjava:rxjava:1.0.8',
-            eventbus    : 'com.nepxion:eventbus:2.0.13',
-            arouterApi    : 'com.alibaba:arouter-api:1.5.1',
-            arouterCompiler    : 'com.alibaba:arouter-compiler:1.5.1'
+            appcompat      : 'androidx.appcompat:appcompat:1.2.0',
+            material       : 'com.google.android.material:material:1.2.1',
+            junit          : 'junit:junit:4.+',
+            junit1         : 'androidx.test.ext:junit:1.1.2',
+            espressocore   : 'androidx.test.espresso:espresso-core:3.3.0',
+            okhttp         : 'com.squareup.okhttp3:okhttp:4.9.0',
+            rxjava         : 'org.rxjava:rxjava:1.0.8',
+            eventbus       : 'com.nepxion:eventbus:2.0.13',
+            arouterApi     : 'com.alibaba:arouter-api:1.5.1',
+            arouterCompiler: 'com.alibaba:arouter-compiler:1.5.1',
+            annotation     : 'androidx.annotation:annotation:1.1.0',
 
     ]
 }
