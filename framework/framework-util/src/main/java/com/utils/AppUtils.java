@@ -5,11 +5,12 @@ package com.utils;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+
+import com.example.framework_util.R;
 
 import java.io.File;
 
@@ -18,11 +19,9 @@ import java.io.File;
  */
 
 public class AppUtils {
-
-    public static boolean getAppDebugMode(Context context) {
-        boolean isDebugMode = (context.getApplicationInfo().flags & ApplicationInfo.FLAG_DEBUGGABLE) != 0;
-//       if (Res.getBoolean(R))
-        return isDebugMode;
+    // 设置全局 debug 模式
+    public static boolean getAppDebugMode() {
+        return Res.getBoolean(R.bool.app_is_debug);
     }
 
     //获取程序版本号

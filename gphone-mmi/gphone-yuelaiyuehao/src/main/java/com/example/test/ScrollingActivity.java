@@ -6,9 +6,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import com.common.interface1.IRequestCallback;
-import com.common.manger.HttpClientConfig;
-import com.common.manger.RequestFactory;
+import com.http.interface1.IRequestCallback;
+import com.http.manger.HttpClientConfig;
+import com.http.manger.RequestFactory;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;

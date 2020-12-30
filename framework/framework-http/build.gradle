@@ -10,11 +10,21 @@ android {
         minSdkVersion rootProject.ext.android.minSdkVersion
 //        targetSdkVersion rootProject.ext.android.targetSdkVersion
     }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
 }
 
 dependencies {
     api project(':framework:framework-base-widget')
-    implementation("com.squareup.okhttp3:okhttp:3.10.0")
-    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    api project(':framework:framework-util')
+    implementation rootProject.ext.dependencie.okhttp
+    implementation rootProject.ext.dependencie.retrofit
+    implementation rootProject.ext.dependencie.converterGson
+    implementation rootProject.ext.dependencie.rxandroid
+    implementation rootProject.ext.dependencie.rxjava
+    implementation rootProject.ext.dependencie.rxjava2Adapter
+    implementation rootProject.ext.dependencie.rxlifecycleComponents
 }
