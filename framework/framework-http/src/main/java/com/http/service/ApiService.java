@@ -1,6 +1,10 @@
 package com.http.service;
 
+
 import com.http.retrofit.base.BaseResponse;
+import com.http.retrofit.bean.Bean;
+import com.http.retrofit.bean.Weather;
+import com.http.retrofit.bean.ZhBean;
 
 import java.util.List;
 import java.util.Map;
@@ -35,11 +39,22 @@ import retrofit2.http.Url;
  * description ：   TODO:类的作用
  */
 public interface ApiService {
-    //key=ae240f7fba620fc370b803566654949e&page=1&pagesize=2
     @GET("joke/content/text.from")
-    Observable<BaseResponse<List<Bean>>> getData(@Query("key") String key,
-                                                 @Query("page") int page,
-                                                 @Query("pagesize") int pagesize);
+    Observable<Bean> getData(@Query("key") String key,
+                             @Query("page") int page,
+                             @Query("pagesize") int pagesize);
+
+    @GET("joke/content/text.from?key=ae240f7fba620fc370b803566654949e&page=1&pagesize=2")
+    Observable<BaseResponse<Bean>> getData1();
+
+
+    @GET("api/columns/zhihuadmin")
+    Observable<ZhBean> getData();
+
+
+    @GET("onebox/weather/query")
+    Observable<BaseResponse<Weather.ResultDTO>> getWeatherInfo(@Query("cityname") String phone,
+                                                     @Query("key") String key);
 
     /**
      * TODO Get请求

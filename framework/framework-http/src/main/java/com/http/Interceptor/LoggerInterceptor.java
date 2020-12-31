@@ -1,5 +1,6 @@
 package com.http.Interceptor;
 
+import com.google.gson.Gson;
 import com.http.logger.Logger;
 import com.utils.AppUtils;
 
@@ -20,6 +21,7 @@ import okhttp3.ResponseBody;
 public class LoggerInterceptor implements Interceptor {
 
     public static final String TAG = "LoggerInterceptor";
+    private static final MediaType MEDIA_TYPE_PNG = MediaType.parse("application/json;charset=utf-8");
 
     public LoggerInterceptor() {
 

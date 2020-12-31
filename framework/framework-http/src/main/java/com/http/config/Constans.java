@@ -7,5 +7,4 @@ package com.http.config;
  */
 public class Constans {
     public static String BASE_URL = "";
-    public static Constans retrofit;
 }

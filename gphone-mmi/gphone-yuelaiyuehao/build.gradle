@@ -13,6 +13,8 @@ android {
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
 
+        multiDexEnabled true
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         // 阿里 Arouter 框架
         javaCompileOptions {
@@ -28,6 +30,31 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/gradle/incremental.annotation.processors'
+        exclude 'AndroidManifest.xml'
+
+        exclude 'META-INF/*'
+
+    }
+
+    lintOptions{
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -35,9 +62,9 @@ android {
 }
 
 dependencies {
-
-
-
     implementation project(':framework:framework-http')
+}
 
+configurations {
+    all*.exclude group: 'com.google.guava', module: 'failureaccess'
 }

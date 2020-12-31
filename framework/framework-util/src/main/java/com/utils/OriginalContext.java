@@ -1,4 +1,4 @@
-package com.base.ui;
+package com.utils;
 
 import android.content.Context;
 
@@ -13,7 +13,7 @@ public class OriginalContext {
 
     public static Context getContext() {
         if (sContext == null)
-            throw new NullPointerException("请先在 Application 中调用 OriginalContext.setContext()进行初始化...");
+            throw new NullPointerException("请先在 Application 中调用 AppInit.init()进行初始化...");
         return sContext;
     }
 

@@ -21,8 +21,6 @@ public class HttpHeaderInterceptor implements Interceptor {
 
         Request request = chain.request();
         Request.Builder requestBuilder = request.newBuilder();
-        requestBuilder.method(request.method(), request.body())
-                .removeHeader("Accept-Encoding");
 
         if (mHeaderParamsMap != null && mHeaderParamsMap.size() > 0) {
             for (Map.Entry<String, String> params : mHeaderParamsMap.entrySet()) {

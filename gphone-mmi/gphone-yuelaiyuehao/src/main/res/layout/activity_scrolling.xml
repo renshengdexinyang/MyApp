@@ -50,12 +50,6 @@
         app:layout_anchor="@id/app_bar"
         app:layout_anchorGravity="bottom|end"
         app:srcCompat="@android:drawable/ic_dialog_email" />
-    <Button
-        android:id="@+id/btn"
-        android:text="请求网路"
-        android:layout_marginTop="300dp"
-        android:layout_width="match_parent"
-        android:layout_height="50dp" />
 
     <include layout="@layout/content_scrolling" />
 

@@ -2,7 +2,7 @@ ext {
     android = [
             compileSdkVersion: 30,
             buildToolsVersion: "30.0.3",
-            applicationId    : "android.phone",
+            applicationId    : "android.peng.app",
             minSdkVersion    : 16,
             targetSdkVersion : 30,
             versionCode      : 1,// 版本升级
@@ -34,6 +34,8 @@ ext {
             arouterApi           : 'com.alibaba:arouter-api:1.5.1',
             arouterCompiler      : 'com.alibaba:arouter-compiler:1.5.1',
             annotation           : 'androidx.annotation:annotation:1.1.0',
+
+            multidex           : 'com.android.support:multidex:1.0.3',
 
 
     ]

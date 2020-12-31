@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
  */
 @NoArgsConstructor
 @Data
-public class bean {
+public class Bean {
 
 
     /**

@@ -11,6 +11,10 @@ android {
 //        targetSdkVersion rootProject.ext.android.targetSdkVersion
 
     }
+    lintOptions{
+        checkReleaseBuilds false
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -19,6 +23,7 @@ dependencies {
     api rootProject.ext.dependencie.appcompat
     api rootProject.ext.dependencie.material
     api rootProject.ext.dependencie.annotation
+    api rootProject.ext.dependencie.multidex
     testApi rootProject.ext.dependencie.junit
     androidTestApi rootProject.ext.dependencie.junit1
     androidTestApi rootProject.ext.dependencie.espressocore

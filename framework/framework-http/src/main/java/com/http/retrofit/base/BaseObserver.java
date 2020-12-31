@@ -9,7 +9,7 @@ import io.reactivex.disposables.Disposable;
 /**
  * date :           2020/12/30 09:50
  * author :         鹏
- * description ：   TODO:类的作用
+ * description ：   对 Observer 进行二次封装
  */
 public abstract class BaseObserver<T> implements Observer<BaseResponse<T>> {
 

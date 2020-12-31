@@ -15,16 +15,20 @@ android {
         targetCompatibility 1.8
         sourceCompatibility 1.8
     }
+    lintOptions{
+        checkReleaseBuilds false
+        abortOnError false
+    }
 }
 
 dependencies {
     api project(':framework:framework-base-widget')
     api project(':framework:framework-util')
-    implementation rootProject.ext.dependencie.okhttp
-    implementation rootProject.ext.dependencie.retrofit
-    implementation rootProject.ext.dependencie.converterGson
-    implementation rootProject.ext.dependencie.rxandroid
-    implementation rootProject.ext.dependencie.rxjava
-    implementation rootProject.ext.dependencie.rxjava2Adapter
-    implementation rootProject.ext.dependencie.rxlifecycleComponents
+    api rootProject.ext.dependencie.okhttp
+    api rootProject.ext.dependencie.retrofit
+    api rootProject.ext.dependencie.converterGson
+    api rootProject.ext.dependencie.rxandroid
+    api rootProject.ext.dependencie.rxjava
+    api rootProject.ext.dependencie.rxjava2Adapter
+    api rootProject.ext.dependencie.rxlifecycleComponents
 }
